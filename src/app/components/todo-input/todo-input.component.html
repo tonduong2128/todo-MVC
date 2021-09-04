@@ -1,0 +1,12 @@
+<!-- <input type="text" [ngModel]="todoContent" (ngModelChange)="onTodoContentChange($event)" class="w-100 h-100" placeholder="What need to be done?" required> -->
+
+
+<input 
+    type="text" 
+    [(ngModel)]="todoContent" 
+    (keyup.enter)="onSubmit()"
+
+    class="w-100 h-100" 
+    placeholder="What need to be done?" 
+    required
+>
