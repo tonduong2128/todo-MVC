@@ -85,7 +85,7 @@ export class TodoService {
   }
 
   clearCompleted(){
-    this.todos = this.todos.filter(todo => !todo.isCompleted);
+    this.todos = this.todos.filter(todo => !todo.isCompleted)
     this.updateToLocalStorage();
   }
 
